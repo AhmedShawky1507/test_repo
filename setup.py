@@ -1,12 +1,14 @@
+#!/usr/bin/env python3
 from setuptools import setup
 
+# Absolute minimum configuration
 setup(
-    name="test_project",  # Required
+    name="your_project",  # Required
     version="0.1.0",     # Required
-    packages=[""],       # Include all Python files in current directory
-    # Optional metadata
-    author="Your Name",
-    description="Test package for CI/CD pipeline",
+    packages=[""],       # Packages to include (empty string = current directory)
+    
+    # Critical for Kali Linux compatibility:
     python_requires=">=3.6",
+    setup_requires=["setuptools==68.2.0", "jaraco.functools==4.0.0"],
 )
 print("Hello world!!!!!!!!!!!!!!!!!!!!!")
