@@ -9,6 +9,5 @@ setup(
     
     # Critical for Kali Linux compatibility:
     python_requires=">=3.6",
-    setup_requires=["setuptools==68.2.0", "jaraco.functools==4.0.0"],
+    setup_requires=["setuptools==68.2.0"],
 )
-print("Hello world!!!!!!!!!!!!!!!!!!!!!")
